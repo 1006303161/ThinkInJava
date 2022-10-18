@@ -1,4 +1,4 @@
-package LinkListAlgorithm.reverseList;
+package com.demo.thinkinjava.algorithm.linkList.reverseList;
 /*
  * Copyright (C) 1997-2020 康成投资（中国）有限公司
  *
@@ -7,8 +7,8 @@ package LinkListAlgorithm.reverseList;
  * 版权归本公司所有，不得私自使用、拷贝、修改、删除，否则视为侵权
  */
 
-import LinkListAlgorithm.LinkListUtils;
-import LinkListAlgorithm.ListNode;
+import com.demo.thinkinjava.algorithm.linkList.LinkListUtils;
+import com.demo.thinkinjava.algorithm.linkList.ListNode;
 
 /**
  * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。

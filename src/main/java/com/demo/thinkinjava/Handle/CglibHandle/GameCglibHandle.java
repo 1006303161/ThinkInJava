@@ -1,4 +1,4 @@
-package Handle.CglibHandle;
+package com.demo.thinkinjava.Handle.CglibHandle;
 /*
  * Copyright (C) 1997-2020 康成投资（中国）有限公司
  *
@@ -8,18 +8,13 @@ package Handle.CglibHandle;
  */
 
 
-import Handle.Game;
-import Handle.Games;
-import Handle.JDKHandle.GameHandle;
-import com.sun.corba.se.spi.ior.ObjectKey;
+import com.demo.thinkinjava.Handle.Games;
 import lombok.Data;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
 
-import java.beans.beancontext.BeanContext;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
  * cflib动态代理

@@ -1,4 +1,4 @@
-package Handle;
+package com.demo.thinkinjava.Handle;
 /*
  * Copyright (C) 1997-2020 康成投资（中国）有限公司
  *
@@ -9,13 +9,8 @@ package Handle;
 
 import lombok.Data;
 
-/**
- * @author jiafeng.liu
- * 游戏
- */
 @Data
-public class Games implements Game {
-
+public class Games implements Game{
     private String name;
 
     private String gamesType;
@@ -31,11 +26,12 @@ public class Games implements Game {
 
     @Override
     public void playGames() {
-        System.out.println("游戏名称是:" + name + ",游戏类型是" + gamesType);
-        this.viewGame();
+        System.out.println("游戏名称是:" + this.name + ",游戏类型是" + this.gamesType);
+        int a = 2/0;
+        viewGame();
     }
 
     public void viewGame() {
-        System.out.println("双人火柴人");
+        System.out.println("推荐XBOX玩耍");
     }
 }

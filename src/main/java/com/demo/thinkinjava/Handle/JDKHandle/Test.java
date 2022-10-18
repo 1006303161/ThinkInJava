@@ -1,4 +1,4 @@
-package Handle.JDKHandle;
+package com.demo.thinkinjava.Handle.JDKHandle;
 /*
  * Copyright (C) 1997-2020 康成投资（中国）有限公司
  *
@@ -7,8 +7,9 @@ package Handle.JDKHandle;
  * 版权归本公司所有，不得私自使用、拷贝、修改、删除，否则视为侵权
  */
 
-import Handle.Game;
-import Handle.Games;
+
+import com.demo.thinkinjava.Handle.Game;
+import com.demo.thinkinjava.Handle.Games;
 
 public class Test {
 
