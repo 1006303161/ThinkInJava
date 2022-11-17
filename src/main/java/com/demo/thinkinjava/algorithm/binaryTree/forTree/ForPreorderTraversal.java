@@ -1,10 +1,11 @@
-package com.demo.thinkinjava.algorithm.binaryTree;
+package com.demo.thinkinjava.algorithm.binaryTree.forTree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
- * 144. 二叉树的前序遍历
+ * 144. 二叉树的前序遍历 迭代
  * 简单
  * 943
  * 相关企业
@@ -44,7 +45,7 @@ import java.util.List;
  *
  * @author FBI
  */
-public class PreorderTraversal {
+public class ForPreorderTraversal {
 
     public static class TreeNode {
         int val;
@@ -64,34 +65,38 @@ public class PreorderTraversal {
     }
 
     /**
-     * 前序遍历  中左右
+     * 前序遍历  中左右  入栈顺序 中右左 迭代法
      *
      * @param root
      * @return
      */
     public static List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> arr = new ArrayList<>();
-        return preOrderList(root, arr);
-    }
-
-    public static List<Integer> preOrderList(TreeNode root, List<Integer> preOrderArr) {
-
-        //终止条件
-        if (root == null) {
-            return preOrderArr;
+        if(root==null){
+            return arr;
         }
-        preOrderArr.add(root.val);
-        preOrderList(root.left, preOrderArr);
-        preOrderList(root.right, preOrderArr);
-
-        return preOrderArr;
+        Stack<TreeNode> arrStack = new Stack<>();
+        arrStack.add(root);
+        while (!arrStack.empty()) {
+            TreeNode pop = arrStack.pop();
+            arr.add(pop.val);
+            //入栈先右后左  出栈才是中左右
+            if(pop.right!=null){
+                arrStack.push(pop.right);
+            }
+            if(pop.left!=null){
+                arrStack.push(pop.left);
+            }
+        }
+        return arr;
     }
+
 
 
 
     public static void main(String[] args) {
         TreeNode treeNode = new TreeNode(3, new TreeNode(1, null, null), new TreeNode(2, null, null));
-        System.out.println(PreorderTraversal.preorderTraversal(treeNode));
+        System.out.println(ForPreorderTraversal.preorderTraversal(treeNode));
     }
 
 }
