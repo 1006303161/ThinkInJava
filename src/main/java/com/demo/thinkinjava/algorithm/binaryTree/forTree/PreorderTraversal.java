@@ -1,4 +1,4 @@
-package com.demo.thinkinjava.algorithm.binaryTree;
+package com.demo.thinkinjava.algorithm.binaryTree.forTree;
 
 import java.util.ArrayList;
 import java.util.List;

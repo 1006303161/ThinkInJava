@@ -1,4 +1,4 @@
-package com.demo.thinkinjava.algorithm.binaryTree;
+package com.demo.thinkinjava.algorithm.binaryTree.forTree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +52,7 @@ public class InorderTraversal {
     }
 
     public static void main(String[] args) {
-        InorderTraversal.TreeNode treeNode = new InorderTraversal.TreeNode(1, null, new InorderTraversal.TreeNode(2, new InorderTraversal.TreeNode(3, null, null), null));
+        TreeNode treeNode = new TreeNode(1, null, new TreeNode(2, new TreeNode(3, null, null), null));
         System.out.println(InorderTraversal.inOrderTraversal(treeNode));
 
     }
