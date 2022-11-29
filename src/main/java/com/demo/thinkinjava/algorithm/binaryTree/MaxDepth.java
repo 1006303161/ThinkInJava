@@ -1,4 +1,5 @@
-package com.demo.thinkinjava.algorithm.binaryTree.forTree;
+package com.demo.thinkinjava.algorithm.binaryTree;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
